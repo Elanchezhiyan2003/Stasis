@@ -32,7 +32,7 @@ export default function Testimonials() {
   ]
 
   return (
-    <section className="py-20 bg-teal-50">
+    <section className="py-20 bg-teal-50 mx-auto xl:container">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -61,7 +61,7 @@ export default function Testimonials() {
                         <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
                       ))}
                     </div>
-                    <p className="text-teal-700 italic flex-grow">{testimonial.text}</p>
+                    <p className="text-teal-700 italic flex-grow">{testimonial.text}&rdquo;</p>
                     <div className="flex items-center gap-4">
                       <Image
                         src={testimonial.image}

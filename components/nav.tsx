@@ -13,7 +13,7 @@ const Nav = () => {
     }
 
     return (
-        <header className="bg-white/80 backdrop-blur-md shadow-sm fixed w-full z-50">
+        <header className="bg-white/80 backdrop-blur-md shadow-sm fixed w-full z-50 mx-auto">
             <nav className="container mx-auto flex justify-between items-center p-4">
                 {/* Brand Logo */}
                 <div className="text-teal-800 font-bold text-xl flex items-center gap-2">

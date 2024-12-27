@@ -61,7 +61,7 @@ export default function Hero() {
   }, [])
 
   return (
-    <section className="relative mx-auto min-h-[100svh] overflow-hidden bg-gradient-to-t from-teal-100 to-white sm:from-teal-50">
+    <section className="relative h-[45rem]  flex items-center justify-center   overflow-hidden bg-gradient-to-t from-teal-100 to-white sm:from-teal-50">
       <canvas
         ref={canvasRef}
         className="absolute inset-0 z-0 mx-auto"
@@ -74,6 +74,7 @@ export default function Hero() {
             transition={{ duration: 0.6 }}
             className="max-w-3xl mx-auto"
           >
+            <div className='relative flex flex-col items-center justify-center bottom-40 '>
             <h1 className="text-5xl sm:text-6xl md:text-7xl font-extrabold text-teal-800 mb-4 mt-60">
             Stasis Artis
               <span className="relative inline-block mt-2">
@@ -97,6 +98,7 @@ export default function Hero() {
               <Button variant="outline" onClick={() => { Process()}} className="border-teal-600 text-teal-600 hover:bg-teal-50 px-8 py-4 text-lg w-full sm:w-auto rounded-xl shadow-lg">
                 Our Process
               </Button>
+            </div>
             </div>
           </motion.div>
         </div>
