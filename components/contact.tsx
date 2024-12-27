@@ -5,7 +5,8 @@ import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-import { Instagram, Facebook, Twitter } from 'lucide-react'
+
+
 
 export default function Contact() {
   const [email, setEmail] = useState('')
@@ -31,7 +32,7 @@ export default function Contact() {
             <p className="text-teal-700 mb-8">
               Interested in commissioning a piece or have questions? We'd love to hear from you.
             </p>
-            
+
             <form className="space-y-6">
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
@@ -55,17 +56,50 @@ export default function Contact() {
             <div className="mt-12">
               <p className="font-medium text-teal-900 mb-4">Follow us on social media</p>
               <div className="flex gap-4">
-                <Button variant="outline" size="icon">
-                <a href="https://www.instagram.com/stasis_artis" target="_blank" rel="noopener noreferrer">
-                  <Instagram className="w-5 h-5" />
+                <a
+                  href="https://www.instagram.com/stasis_artis"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="transition-transform hover:scale-110"
+                >
+                  <Button
+                    variant="outline"
+                    size="icon"
+                    className="border-teal-200 hover:border-teal-500 hover:bg-teal-50"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5" /><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" /><line x1="17.5" x2="17.51" y1="6.5" y2="6.5" /></svg>
+                   
+                  </Button>
                 </a>
-                </Button>
-                <Button variant="outline" size="icon">
-                  <Facebook className="w-5 h-5" />
-                </Button>
-                <Button variant="outline" size="icon">
-                  <Twitter className="w-5 h-5" />
-                </Button>
+                <a
+                  href="https://www.facebook.com/stasisart"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="transition-transform hover:scale-110"
+                >
+                  <Button
+                    variant="outline"
+                    size="icon"
+                    className="border-teal-200 hover:border-teal-500 hover:bg-teal-50"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                    
+                  </Button>
+                </a>
+                <a
+                  href="https://twitter.com/stasis_art"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="transition-transform hover:scale-110"
+                >
+                  <Button
+                    variant="outline"
+                    size="icon"
+                    className="border-teal-200 hover:border-teal-500 hover:bg-teal-50"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-twitter"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+                  </Button>
+                </a>
               </div>
             </div>
           </div>
@@ -93,4 +127,3 @@ export default function Contact() {
     </section>
   )
 }
-
