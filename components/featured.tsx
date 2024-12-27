@@ -4,28 +4,29 @@ import { useState } from 'react'
 import Image from 'next/image'
 import { motion } from "framer-motion"
 import { Dialog, DialogContent } from "@/components/ui/dialog"
+import Stasis from '@/components/assets/stasis.jpg'
 
 export default function Featured() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null)
   
   const images = [
     {
-      src: "/placeholder.svg?height=600&width=600",
+      src: Stasis.src,
       alt: "Turquoise wave resin art",
       title: "Ocean's Dance"
     },
     {
-      src: "/placeholder.svg?height=600&width=600",
+      src: Stasis.src,
       alt: "Crystal clear resin formation",
       title: "Crystal Flow"
     },
     {
-      src: "/placeholder.svg?height=600&width=600",
+      src: Stasis.src,
       alt: "Teal and gold resin piece",
       title: "Golden Tide"
     },
     {
-      src: "/placeholder.svg?height=600&width=600",
+      src: Stasis.src,
       alt: "Abstract resin pour",
       title: "Ethereal Current"
     }

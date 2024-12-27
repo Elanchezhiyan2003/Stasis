@@ -6,6 +6,7 @@ import { motion } from "framer-motion"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog"
+import Stasis from '@/components/assets/stasis.jpg'
 
 export default function Products() {
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null)
@@ -23,7 +24,7 @@ export default function Products() {
     {
       name: "Azure Depths",
       price: "$499",
-      image: "/placeholder.svg?height=600&width=600",
+      image:Stasis.src,
       description: "A mesmerizing piece capturing the depths of the ocean with swirling blues and teals",
       dimensions: "24\" x 24\"",
       materials: ["Epoxy resin", "Alcohol ink", "Metal pigments", "Canvas"]
@@ -31,7 +32,7 @@ export default function Products() {
     {
       name: "Emerald Flow",
       price: "$599",
-      image: "/placeholder.svg?height=600&width=600",
+      image: Stasis.src,
       description: "Rich emerald tones cascade through crystalline formations",
       dimensions: "30\" x 20\"",
       materials: ["Epoxy resin", "Mica powder", "Acrylic paint", "Wood panel"]
@@ -39,7 +40,7 @@ export default function Products() {
     {
       name: "Coastal Dream",
       price: "$449",
-      image: "/placeholder.svg?height=600&width=600",
+      image: Stasis.src,
       description: "Inspired by aerial views of tropical coastlines",
       dimensions: "20\" x 20\"",
       materials: ["Epoxy resin", "Metallic pigments", "Glass powder", "Canvas"]

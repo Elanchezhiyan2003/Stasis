@@ -4,13 +4,14 @@ import Image from 'next/image'
 import { motion } from "framer-motion"
 import { Card, CardContent } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import Stasis from '@/components/assets/stasis.jpg'
 
 export default function Process() {
   const steps = [
     {
       title: "Design & Planning",
       description: "Every piece begins with careful color selection and composition planning",
-      image: "/placeholder.svg?height=400&width=600",
+      image: Stasis.src,
       details: [
         "Color palette selection",
         "Composition sketching",
@@ -21,7 +22,7 @@ export default function Process() {
     {
       title: "Resin Mixing",
       description: "Precise measurements and pigment mixing for the perfect consistency",
-      image: "/placeholder.svg?height=400&width=600",
+      image: Stasis.src,
       details: [
         "Temperature control",
         "Pigment mixing",
@@ -32,7 +33,7 @@ export default function Process() {
     {
       title: "Pouring Technique",
       description: "Artistic pouring methods that create unique patterns and effects",
-      image: "/placeholder.svg?height=400&width=600",
+      image: Stasis.src,
       details: [
         "Layer planning",
         "Flow control",
@@ -43,7 +44,7 @@ export default function Process() {
     {
       title: "Curing & Finishing",
       description: "Careful monitoring and finishing touches for a perfect result",
-      image: "/placeholder.svg?height=400&width=600",
+      image: Stasis.src,
       details: [
         "Environment control",
         "Curing time",

@@ -4,6 +4,7 @@ import Image from 'next/image'
 import { motion } from "framer-motion"
 import { Card, CardContent } from "@/components/ui/card"
 import { Star } from 'lucide-react'
+import Stasis from '@/components/assets/stasis.jpg'
 
 export default function Testimonials() {
   const testimonials = [
@@ -12,21 +13,21 @@ export default function Testimonials() {
       author: "Emma W.",
       location: "New York, NY",
       rating: 5,
-      image: "/placeholder.svg?height=80&width=80"
+      image: Stasis
     },
     {
       text: "A true masterpiece that has become the focal point of my living room. The craftsmanship is exceptional.",
       author: "James L.",
       location: "Los Angeles, CA",
       rating: 5,
-      image: "/placeholder.svg?height=80&width=80"
+      image: Stasis
     },
     {
       text: "The colors and patterns in my piece are mesmerizing. I find myself getting lost in its details every day.",
       author: "Sophie M.",
       location: "London, UK",
       rating: 5,
-      image: "/placeholder.svg?height=80&width=80"
+      image: Stasis
     }
   ]
 
